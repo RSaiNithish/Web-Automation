@@ -29,9 +29,9 @@ def login(username,pas,browser):
 def check_form(url):   
     browser.get(url)
     for i in range(15):
-        a = browser.find_element(By.XPATH,f'//*[@id="id_multichoicerated_6003{7+i}_4"]')
+        a = browser.find_element(By.XPATH,f'//*[@id="id_multichoicerated_600{37+i}_6"]')
         a.click()
-    browser.find_element(By.XPATH,'//*[@id="submit"]').click()
+    browser.find_element(By.XPATH,'//*[@id="id_savevalues"]').click()
 
 
 browser = init()
